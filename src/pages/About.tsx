@@ -1,15 +1,5 @@
 import { Layout } from "@/components/Layout";
 
-const focusAreas = [
-  "Mobile Application Security",
-  "Android Security",
-  "Linux & Networking",
-  "Web & API Security",
-  "Python for Security",
-  "Reverse Engineering",
-  "CTF & Digital Forensics",
-];
-
 const About = () => {
   return (
     <Layout showEchelonFooter>
