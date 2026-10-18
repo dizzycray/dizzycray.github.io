@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 
 const navItems = [
   { label: "About", path: "/about" },
+  { label: "Lab", path: "/lab" },
   { label: "Contact", path: "/contact" },
 ];
 
@@ -56,7 +57,7 @@ export function Header({ revealMode = false }: HeaderProps) {
             to="/" 
             className="font-display text-lg font-semibold tracking-tight text-foreground hover:opacity-70 transition-opacity"
           >
-            Jordan Studio
+            Azra.
           </Link>
 
           {/* Desktop Navigation - Centered */}

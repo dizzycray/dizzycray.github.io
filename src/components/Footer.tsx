@@ -17,28 +17,27 @@ export function Footer({ variant = "default" }: FooterProps) {
             <div className="space-y-3">
               <p className="text-label">Location</p>
               <div className="text-sm text-foreground space-y-1">
-                <p>São Paulo, SP</p>
-                <p>Brazil</p>
+                <p>Samsun</p>
+                <p>Türkiye</p>
               </div>
             </div>
 
             {/* Gallery */}
             <div className="space-y-3">
-              <p className="text-label">Gallery</p>
+              <p className="text-label">Explore</p>
               <div className="text-sm space-y-1">
                 <Link to="/about" className="block text-foreground hover:text-accent transition-colors">About</Link>
+                <Link to="/lab" className="block text-foreground hover:text-accent transition-colors">Lab</Link>
                 <Link to="/contact" className="block text-foreground hover:text-accent transition-colors">Contact</Link>
               </div>
             </div>
 
-            {/* Contact */}
+            {/* Focus */}
             <div className="space-y-3">
-              <p className="text-label">Contact</p>
+              <p className="text-label">Focus</p>
               <div className="text-sm text-foreground space-y-1">
-                <a href="mailto:hello@jordanstudio.com" className="block hover:text-accent transition-colors">
-                  hello@jordanstudio.com
-                </a>
-                <p>+55 11 9999-9999</p>
+                <p>Mobile Security</p>
+                <p>Reverse Engineering</p>
               </div>
             </div>
 
@@ -60,7 +59,7 @@ export function Footer({ variant = "default" }: FooterProps) {
                 key={i}
                 className="font-display text-6xl md:text-8xl lg:text-[10rem] font-bold text-foreground mx-12"
               >
-                @JORDANSTUDIO
+                @AZRA
               </span>
             ))}
           </div>
@@ -76,22 +75,23 @@ export function Footer({ variant = "default" }: FooterProps) {
         <div className="flex flex-col md:flex-row justify-between gap-8">
           {/* Left */}
           <div className="space-y-4">
-            <p className="font-display text-xl font-semibold">Jordan Studio</p>
+            <p className="font-display text-xl font-semibold">Azra.</p>
             <p className="text-muted-foreground text-sm">
-              Design & Illustration
+              Cybersecurity Portfolio
             </p>
           </div>
 
           {/* Center */}
           <div className="flex gap-8 text-sm text-muted-foreground">
             <Link to="/about" className="hover-highlight">About</Link>
+            <Link to="/lab" className="hover-highlight">Lab</Link>
             <Link to="/contact" className="hover-highlight">Contact</Link>
           </div>
 
           {/* Right */}
           <div className="text-sm text-muted-foreground">
-            <p>© {currentYear} Jordan Studio</p>
-            <p className="mt-1">São Paulo, Brazil</p>
+            <p>© {currentYear} Azra</p>
+            <p className="mt-1">Samsun, Türkiye</p>
           </div>
         </div>
       </div>

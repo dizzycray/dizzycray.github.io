@@ -1,11 +1,13 @@
 import { Layout } from "@/components/Layout";
 
-const clients = [
-  "Gallery Moderne",
-  "Tech Futures Lab",
-  "Bloom Publishing",
-  "Vogue Italia",
-  "Heritage Museum",
+const focusAreas = [
+  "Mobile Application Security",
+  "Android Security",
+  "Linux & Networking",
+  "Web & API Security",
+  "Python for Security",
+  "Reverse Engineering",
+  "CTF & Digital Forensics",
 ];
 
 const About = () => {
@@ -15,42 +17,34 @@ const About = () => {
         <div className="max-w-3xl space-y-12">
           {/* Content */}
           <div>
-            <h1 className="text-display mb-8 animate-fade-in-up">About</h1>
-            
+            <h1 className="text-display mb-8 animate-fade-in-up">Beyond the Surface</h1>
+
             <div className="space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
               <p>
-                <span className="text-foreground">Jordan Studio</span> is an independent creative 
-                studio specializing in brand identity, illustration, and visual design.
+                I'm <span className="text-foreground">Azra</span>, a Mobile Security
+                Technologies student at Ondokuz Mayıs University, interested in
+                understanding how software works beneath the interface and how
+                digital systems can be made more secure.
               </p>
               <p>
-                Our approach combines minimalist aesthetics, authentic storytelling, 
-                and thoughtful design. Each project is an opportunity to explore 
-                stories through a unique visual language.
+                My learning journey spans Linux, networking, Python, web security,
+                Android security, and reverse engineering. I enjoy exploring
+                unfamiliar technologies, solving technical problems, and turning
+                what I learn into practical experiments.
               </p>
               <p>
-                We work on commercial, editorial, and personal projects, always 
-                seeking to create authentic narratives with visual depth.
+                I'm building my skills one project at a time, documenting my
+                progress, learning from mistakes, and developing the foundations
+                for a career in cybersecurity.
               </p>
             </div>
           </div>
 
-          {/* Selected Clients */}
+          {/* Focus Areas */}
           <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <h2 className="text-label mb-6">Selected Clients</h2>
-            <ul className="space-y-3">
-              {clients.map((client) => (
-                <li key={client} className="text-lg">
-                  {client}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Experience */}
-          <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <h2 className="text-label mb-6">Expertise</h2>
+            <h2 className="text-label mb-6">Focus Areas</h2>
             <div className="flex flex-wrap gap-3">
-              {["Brand Identity", "Illustration", "Editorial", "Visual Design", "Art Direction", "Motion"].map((area) => (
+              {focusAreas.map((area) => (
                 <span
                   key={area}
                   className="text-sm border border-border px-4 py-2"
