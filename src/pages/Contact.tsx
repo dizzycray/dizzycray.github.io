@@ -1,5 +1,4 @@
 import { Layout } from "@/components/Layout";
-import { Mail, Phone, Instagram } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -10,43 +9,17 @@ const Contact = () => {
           <div className="space-y-12">
             <div>
               <h1 className="text-display mb-6 animate-fade-in-up">
-                Let's work<br />together.
+                Let's Connect.
               </h1>
               <p className="text-xl text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-                Interested in collaborating? Let's talk about your next project.
+                Interested in cybersecurity, mobile security, open-source projects, or learning together? I'd love to connect with curious people who enjoy building and exploring.
               </p>
             </div>
 
-            {/* Contact Info */}
-            <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-              <a
-                href="mailto:hello@jordanstudio.com"
-                className="flex items-center gap-4 text-lg hover-highlight group"
-              >
-                <Mail size={20} className="text-muted-foreground group-hover:text-accent transition-colors" />
-                <span>hello@jordanstudio.com</span>
-              </a>
-
-              <a
-                href="https://instagram.com/jordanstudio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 text-lg hover-highlight group"
-              >
-                <Instagram size={20} className="text-muted-foreground group-hover:text-accent transition-colors" />
-                <span>@jordanstudio</span>
-              </a>
-
-              <div className="flex items-center gap-4 text-lg text-muted-foreground">
-                <Phone size={20} />
-                <span>+55 11 9999-9999</span>
-              </div>
-            </div>
-
             {/* Location */}
-            <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
               <p className="text-label mb-2">Based in</p>
-              <p className="text-lg">São Paulo, Brazil</p>
+              <p className="text-lg">Samsun, Türkiye</p>
             </div>
           </div>
 
