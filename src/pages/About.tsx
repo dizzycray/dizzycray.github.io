@@ -1,15 +1,5 @@
 import { Layout } from "@/components/Layout";
 
-const focusAreas = [
-  "Mobile Application Security",
-  "Android Security",
-  "Linux & Networking",
-  "Web & API Security",
-  "Python for Security",
-  "Reverse Engineering",
-  "CTF & Digital Forensics",
-];
-
 const About = () => {
   return (
     <Layout showEchelonFooter>
@@ -40,20 +30,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* Focus Areas */}
-          <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <h2 className="text-label mb-6">Focus Areas</h2>
-            <div className="flex flex-wrap gap-3">
-              {focusAreas.map((area) => (
-                <span
-                  key={area}
-                  className="text-sm border border-border px-4 py-2"
-                >
-                  {area}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
     </Layout>
