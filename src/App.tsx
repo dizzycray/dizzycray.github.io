@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import About from "./pages/About";
-import Lab from "./pages/Lab";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -18,11 +17,10 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
-            <Route path="/lab" element={<Lab />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

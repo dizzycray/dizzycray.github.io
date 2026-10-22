@@ -57,10 +57,14 @@ const Index = () => {
         <div className="absolute inset-0 bg-background/30" />
 
         {/* Centered Title - Overlaid */}
-        <div className="absolute inset-0 flex items-center justify-center z-10">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-display font-bold tracking-tight text-foreground">
-            Curious about what lies beneath.
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-10 text-center px-4 pointer-events-none select-none">
+          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-display font-bold tracking-tight text-foreground leading-[0.95]">
+            <span className="block">A mind</span>
+            <span className="block">in motion.</span>
           </h1>
+          <p className="mt-4 sm:mt-6 text-base sm:text-xl md:text-2xl font-sans text-foreground/80 tracking-wide font-light">
+            Curiosity leads. I follow.
+          </p>
         </div>
 
         {/* Bio - Bottom Left */}

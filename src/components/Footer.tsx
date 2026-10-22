@@ -27,7 +27,6 @@ export function Footer({ variant = "default" }: FooterProps) {
               <p className="text-label">Explore</p>
               <div className="text-sm space-y-1">
                 <Link to="/about" className="block text-foreground hover:text-accent transition-colors">About</Link>
-                <Link to="/lab" className="block text-foreground hover:text-accent transition-colors">Lab</Link>
                 <Link to="/contact" className="block text-foreground hover:text-accent transition-colors">Contact</Link>
               </div>
             </div>
@@ -84,7 +83,6 @@ export function Footer({ variant = "default" }: FooterProps) {
           {/* Center */}
           <div className="flex gap-8 text-sm text-muted-foreground">
             <Link to="/about" className="hover-highlight">About</Link>
-            <Link to="/lab" className="hover-highlight">Lab</Link>
             <Link to="/contact" className="hover-highlight">Contact</Link>
           </div>
 
